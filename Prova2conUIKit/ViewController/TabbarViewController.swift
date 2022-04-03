@@ -19,37 +19,37 @@ class TabViewController: UIViewController {
     
     @IBAction func showAddNewContact(_ sender: UIBarButtonItem) {
         
-        guard presentedViewController == nil else {
-            dismiss(animated: true, completion: {
-                self.showAddNewContact(sender)
-            })
-            return
-        }
-        
-        if let AddViewController = self.storyboard?.instantiateViewController(withIdentifier: "newContact") {
-            AddViewController.modalPresentationStyle = .formSheet
-//            if let popover = AddViewController.popoverPresentationController {
-//                popover.barButtonItem = sender
-                
-//                let sheet = popover.adaptiveSheetPresentationController
-//                sheet.detents = [.medium()]
-                if let sheet = AddViewController.sheetPresentationController{
-                    
-                   sheet.detents = [.medium(), .large()]
+//        guard presentedViewController == nil else {
+//            dismiss(animated: true, completion: {
+//                self.showAddNewContact(sender)
+//            })
+//            return
+//        }
+//
+//        if let AddViewController = self.storyboard?.instantiateViewController(withIdentifier: "newContact") {
+//            AddViewController.modalPresentationStyle = .formSheet
+////            if let popover = AddViewController.popoverPresentationController {
+////                popover.barButtonItem = sender
+//
+////                let sheet = popover.adaptiveSheetPresentationController
+////                sheet.detents = [.medium()]
+//                if let sheet = AddViewController.sheetPresentationController{
+//
+//                   sheet.detents = [.medium(), .large()]
+////                }
+//                sheet.largestUndimmedDetentIdentifier =
+//                PresentationHelper.sharedInstance.largestUndimmedDetentIdentifier
+//                sheet.prefersScrollingExpandsWhenScrolledToEdge =
+//                PresentationHelper.sharedInstance.prefersScrollingExpandsWhenScrolledToEdge
+//                sheet.prefersEdgeAttachedInCompactHeight =
+//                PresentationHelper.sharedInstance.prefersEdgeAttachedInCompactHeight
+//                sheet.widthFollowsPreferredContentSizeWhenEdgeAttached =
+//                PresentationHelper.sharedInstance.widthFollowsPreferredContentSizeWhenEdgeAttached
 //                }
-                sheet.largestUndimmedDetentIdentifier =
-                PresentationHelper.sharedInstance.largestUndimmedDetentIdentifier
-                sheet.prefersScrollingExpandsWhenScrolledToEdge =
-                PresentationHelper.sharedInstance.prefersScrollingExpandsWhenScrolledToEdge
-                sheet.prefersEdgeAttachedInCompactHeight =
-                PresentationHelper.sharedInstance.prefersEdgeAttachedInCompactHeight
-                sheet.widthFollowsPreferredContentSizeWhenEdgeAttached =
-                PresentationHelper.sharedInstance.widthFollowsPreferredContentSizeWhenEdgeAttached
-                }
-//            }
-            
-            present(AddViewController, animated: true, completion: nil)
-        }
+////            }
+//
+//            present(AddViewController, animated: true, completion: nil)
+//        }
     }
     
 }
