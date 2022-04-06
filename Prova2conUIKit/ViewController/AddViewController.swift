@@ -16,7 +16,13 @@ class AddViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBSegueAction func toImageView(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder, rootView: RecentsSwiftUIView())
+//    @IBSegueAction func toImageView(_ coder: NSCoder) -> UIViewController? {
+//        return UIHostingController(coder: coder, rootView: RecentsSwiftUIView())
+//    }
+    
+    @IBAction func toImageView(_ sender: Any) {
+        
+        
     }
+    
 }
