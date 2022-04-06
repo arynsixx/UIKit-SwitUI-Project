@@ -18,7 +18,7 @@ In both ViewController I added a container to which I connected a UIHostingContr
 <img width="737" alt="Schermata 2022-04-06 alle 15 58 58" src="https://user-images.githubusercontent.com/94188485/162016717-6d419192-fecf-4246-acfc-edf0b841d198.png">
 
 
-To make these connections for each ViewController I called the Assistant and used @IBSegueAction, in UIKit a segue is an object that defines a transition between two view controllers in a storyboard
+To make these connections for each ViewController I called the Assistant and used @IBSegueAction, in UIKit a segue is an object that defines a transition between two view controllers in a storyboard file.
 
 <img width="885" alt="Schermata 2022-04-06 alle 17 40 09" src="https://user-images.githubusercontent.com/94188485/162016996-73b4e755-5cc7-4d8e-a6bc-d83a34a2e605.png">
 
@@ -31,7 +31,6 @@ To make these connections for each ViewController I called the Assistant and use
 In the TabViewController I added a button to add a new contact, this button links to a modal created in the storyboard.
 
 <img width="737" alt="Schermata 2022-04-06 alle 16 00 11" src="https://user-images.githubusercontent.com/94188485/162016751-3ff7e284-bc98-40ef-a41a-442781d040e6.png">
- file.
 
 
 ## How it works
